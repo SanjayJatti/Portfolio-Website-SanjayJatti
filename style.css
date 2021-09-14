@@ -9,6 +9,9 @@
     --gray: #F3F4F6;
     --dark-gray:#6B7280;
 }
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.1rem;} } 
+@media (min-width:1100px) { body {font-size:1.1rem;} }
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -41,7 +44,7 @@ hr {
 
 .navigation li {
     display: inline-block;
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
     margin-right: 1rem;
 }
 
@@ -86,7 +89,8 @@ hr {
 }
 
 .hero img {
-    max-width: 400px;
+    max-width: 50%;
+    /* max-width: 400px; */
     margin: auto;
     display: block;
 }
@@ -137,6 +141,7 @@ header h1{
     min-width: 140px;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem 1rem;
 }
 
 .link-secondory {
@@ -147,6 +152,7 @@ header h1{
     min-width: 140px;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem 1rem;
 }
 /** footer **/
 .footer {
