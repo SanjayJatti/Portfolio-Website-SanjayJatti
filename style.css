@@ -9,15 +9,13 @@
     --gray: #F3F4F6;
     --dark-gray:#6B7280;
 }
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.1rem;} } 
-@media (min-width:1100px) { body {font-size:1.1rem;} }
 body {
     font-family: 'Montserrat', sans-serif;
+  
 }
 
 hr {
-    margin: 2rem 0;;
+    margin: 2rem 0;
 }
 .container-fluid {
     padding-left: 1rem;
@@ -90,7 +88,6 @@ hr {
 
 .hero img {
     max-width: 50%;
-    /* max-width: 400px; */
     margin: auto;
     display: block;
 }
@@ -127,6 +124,12 @@ header h1{
 .ow {
     background-color: var(--gray);
 }
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -137,22 +140,27 @@ header h1{
     text-decoration: none;
     color: white;
     background-color: var(--primary);
-    width: max-content;
-    min-width: 140px;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 1rem 1rem;
+    margin: 0.7rem 0.7rem;
+}
+.link-primary:hover{
+    background-color: white;
+    color:var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .link-secondory {
     text-decoration: none;
     color: var(--primary);
     border: 1px solid var(--primary);
-    width: max-content;
-    min-width: 140px;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 1rem 1rem;
+    margin: 0.7rem 0.7rem;
+}
+.link-secondory:hover{
+    background-color:var(--primary);
+    color:white;
 }
 /** footer **/
 .footer {
